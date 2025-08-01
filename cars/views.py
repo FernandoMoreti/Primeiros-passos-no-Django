@@ -1,6 +1,18 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-# Create your views here.
 def carsView(request):
-    return HttpResponse('Meus carros')
+    return render(
+        request,
+        'cars.html', 
+        {'cars': 
+            {'model': 'Astra 2.0'},
+        'cars': 
+            {'model': 'Astra 2.0'},
+        'cars': 
+            {'model': 'Astra 2.0'},
+        'cars': 
+            {'model': 'Astra 2.0'},
+        'cars': 
+            {'model': 'uno 2.0'},
+        }
+    )
